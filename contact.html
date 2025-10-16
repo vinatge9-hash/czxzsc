@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Urban Pulse Fitness</title>
+  <meta name="description" content="Get in touch with Urban Pulse Fitness to start your journey toward a stronger, healthier you." />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans antialiased bg-white text-gray-800">
+  <!-- Navigation -->
+  <header>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+          <div class="flex items-center">
+            <span class="text-2xl font-[Oswald] font-bold text-[#DC143C]">Urban Pulse Fitness</span>
+          </div>
+          <div class="hidden md:flex space-x-6">
+            <a href="index.html" class="text-gray-700 hover:text-[#FF4500] transition-all duration-300">Home</a>
+            <a href="about.html" class="text-gray-700 hover:text-[#FF4500] transition-all duration-300">About</a>
+            <a href="index.html#programs" class="text-gray-700 hover:text-[#FF4500] transition-all duration-300">Programs</a>
+            <a href="contact.html" class="text-gray-700 hover:text-[#FF4500] transition-all duration-300">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen bg-cover bg-center" style="background-image: url('https://pixabay.com/get/g25539a982f32727e1a42aca55bfa084e9b6cb9def968bd148a1801f68060bf921a5342a2de5a8b2993b9e8e8bb555a2247c4d735660e1b3e4a650b662da60143_640.jpg');">
+    <div class="absolute inset-0 bg-black opacity-60 mix-blend-multiply"></div>
+    <div class="relative z-10 max-w-3xl mx-auto px-4 py-40 text-center text-white">
+      <h1 class="font-[Oswald] text-4xl md:text-5xl font-bold mb-4">Get in Touch</h1>
+      <p class="text-lg md:text-xl">Have questions? We’re here to help you start your fitness journey.</p>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section class="py-12">
+    <div class="max-w-4xl mx-auto px-4">
+      <form class="bg-white rounded-lg shadow p-6 space-y-4" onsubmit="return false;" aria-label="Contact form">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF4500]" type="text" name="firstName" placeholder="First Name" required />
+          <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF4500]" type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FF4500]" type="email" name="email" placeholder="Email" required />
+        <textarea class="w-full border border-gray-300 rounded px-3 py-2 h-32 resize-y focus:outline-none focus:ring-2 focus:ring-[#FF4500]" name="message" placeholder="Your message" required></textarea>
+        <button type="submit" class="bg-[#FF4500] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#e03a00] transition-all duration-300">Send Message</button>
+        <p id="formStatus" class="text-sm text-green-600 hidden">Thanks! Your message has been sent.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Map/Location -->
+  <section class="py-6 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+      <div>
+        <h2 class="font-[Oswald] text-2xl md:text-3xl font-bold mb-2">Location</h2>
+        <p class="text-gray-700">Urban Pulse Fitness, 123 Fitness Ave, City, ST 12345</p>
+        <p class="text-gray-700">Hours: Mon-Fri 5:00 AM – 11:00 PM; Sat-Sun 6:00 AM – 9:00 PM</p>
+      </div>
+      <div class="bg-white rounded-lg shadow p-4 h-64 flex items-center justify-center">
+        <span aria-label="Map placeholder">[Map Placeholder]</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#DC143C] text-white">
+    <div class="max-w-7xl mx-auto px-4 py-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="space-y-3">
+          <h3 class="text-2xl font-bold">Urban Pulse Fitness</h3>
+          <p class="text-sm text-gray-200">Move well. Feel strong. Live better.</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold">Contact</h4>
+          <p class="text-sm">123 Fitness Ave</p>
+          <p class="text-sm">City, ST 12345</p>
+          <p class="text-sm">hello@urbanpulse.fit</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold">Hours</h4>
+          <p class="text-sm">Mon-Fri: 5:00 AM - 11:00 PM</p>
+          <p class="text-sm">Sat-Sun: 6:00 AM - 9:00 PM</p>
+        </div>
+        <div class="space-y-3">
+          <h4 class="text-lg font-semibold">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:underline">Home</a></li>
+            <li><a href="about.html" class="hover:underline">About</a></li>
+            <li><a href="index.html#programs" class="hover:underline">Programs</a></li>
+            <li><a href="contact.html" class="hover:underline">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-t border-white/30 my-6" />
+      <div class="text-center text-sm text-white/80">© 2025 Urban Pulse Fitness. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
